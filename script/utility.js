@@ -60,3 +60,13 @@ function addToList(playerName, btn) {
 
 }
 
+function checkInputError(inputID) {
+
+    if (isNaN(inputID.value) || inputID.value < 0 || inputID.value.trim().length == 0) {
+        alert("Insert a Valid Positive Number");
+
+        return true;
+
+    }
+
+}
